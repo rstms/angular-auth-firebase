@@ -1,0 +1,12 @@
+{
+  "name": "angular-hello",
+  "version": "0.0.1",
+  "description": "Angular Hello World",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -o"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  }
+}
