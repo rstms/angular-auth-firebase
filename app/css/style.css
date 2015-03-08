@@ -3,7 +3,36 @@ html {
   font-size: 28px
 }
 
-nav {
+
+.title-bar {
   background-color: gray;
+  padding: 10px;
 }
+
+.title-bar img, .title-bar h1, .title-bar nav, .title-bar nav a {
+  display: inline;
+  vertical-align: middle;
+}
+
+.title-bar h1 {
+  line-height: 48px;
+  font-size: 24px;
+}
+
+.title-bar nav {
+  float: right;
+}
+
+.menu-button {
+  margin: 4px;
+}
+
+.workspace {
+  clear: both;
+}
+
+.status {
+  margin-top: 10px;
+}
+
 

@@ -1,25 +1,29 @@
-<!doctype HTML>
-<html>
+<!DOCTYPE html>
+<html ng-app="DemoApp">
   <head>
+    <title>Firebase Angular Auth Demo</title>
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <title>Hello, Angular!</title>
-    <h1>Hello, Angular!</h1>
+    <link href="css/button.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
-  <body ng-app="HelloApp">
-    <div class=nav>
-        <button name="button-login">ABOUT</button>
-        <button name="button-login">CONTACT</button>
-        <button name="button-login">LOGIN</button>
-        <button name="button-login">SIGN UP</button>
-    </div> 
-    <div ng-controller="HelloController as helloCtrl">
-      <p>Howdy</p>
-      {{helloCtrl.test}}
-      <form name="helloForm">
-        <button ng-click="helloCtrl.alert('fnord')" name="hellobutton">Boink</button>
-      </form>
+  <body>
+    <div ng-controller="MenuCtrl as menuCtrl">
+      <div class="title-bar">
+        <img src="images/key.png">
+        <h1>FIREBASE AUTH DEMO</h1>
+        <nav ng-repeat="map in menuCtrl.menuMap">
+          <a href={{map.url}} ng-show=map.enable class="AppButton menu-button">{{map.label}}</a>
+        </nav>
+      </div>
     </div>
+    <div ng-view></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="logout/logout.js"></script>
+    <script src="signup/signup.js"></script>
+    <script src="login/login.js"></script>
+    <script src="contact/contact.js"></script>
+    <script src="about/about.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 {
-  "name": "angular-hello",
+  "name": "angular-auth-firebase",
   "version": "0.0.1",
-  "description": "Angular Hello World",
+  "description": "Firebase Auth with Angular",
   "scripts": {
-    "start": "node node_modules/http-server/bin/http-server -o"
+    "start": "node node_modules/http-server/bin/http-server app"
   },
   "dependencies": {},
   "devDependencies": {
